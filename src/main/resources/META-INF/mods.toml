@@ -1,0 +1,19 @@
+modLoader="javafml"
+loaderVersion="[38,)"
+license="All rights reserved"
+issueTrackerURL=""
+
+[[mods]]
+  modId="endskymod"
+  version="1.0.0"
+  displayName="End Sky Mod"
+  displayURL=""
+  authors="SchnappDragon"
+  description=''''''
+
+  [[dependencies.end_sky_mod]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.18, 1.19)"
+    ordering="NONE"
+    side="BOTH"
