@@ -7,7 +7,6 @@ import com.mojang.math.Vector3f;
 import mod.schnappdragon.endskymod.core.EndSkyMod;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.multiplayer.ClientLevel;
-import net.minecraft.client.renderer.GameRenderer;
 import net.minecraft.client.renderer.blockentity.TheEndPortalRenderer;
 import net.minecraft.world.level.Level;
 import net.minecraftforge.api.distmarker.Dist;
@@ -33,7 +32,7 @@ public class EndSkyRenderer {
             RenderSystem.enableBlend();
             RenderSystem.defaultBlendFunc();
             RenderSystem.depthMask(false);
-            RenderSystem.setShader(GameRenderer::getRendertypeEndPortalShader);
+            RenderSystem.setShader(EndSkyModShaders::getRendertypeEndSkyShader);
             RenderSystem.setShaderTexture(0, TheEndPortalRenderer.END_SKY_LOCATION);
             RenderSystem.setShaderTexture(1, TheEndPortalRenderer.END_PORTAL_LOCATION);
             Tesselator tesselator = Tesselator.getInstance();
